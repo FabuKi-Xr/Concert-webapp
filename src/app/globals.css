@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+    --foreground: #FBFBFB;
+    --sidebar: #FFFFFF;
+    --sidebar-border: #E7E7E7;
+    --sidebar-role-color: #000000;
+    --sidevar-route-select: #EAF5F9;
+  }
+}
+
+body {
+  color: rgb(var(--background-start-rgb));
+  background: #FBFBFB;
+  font-family: 'roboto';
+}
+
+.sidebar {
+  background: var(--sidebar);
+  border-color: var(--sidebar-border);
+}
+
+.sidebar .role {
+  color: var(--sidebar-role-color);
+  font-size: 40px;
+}
+
+.sidebar .route .select {
+  background: var(--sidevar-route-select);
+}
+
+.sidebar .route *{
+  gap: 10px;
+  font-size: 24px;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

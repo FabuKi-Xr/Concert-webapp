@@ -1,3 +1,6 @@
+.admin {
+    --text-highlight-color: #1692EC;
+}
 .admin-components {
     --card-text-color: #FFFFFF;
 }
@@ -13,8 +16,8 @@
 }
 
 .admin-page nav .select{
-    border-bottom: #1692EC 2px solid;
+    border-bottom: var(--text-highlight-color) 2px solid;
     border-bottom-width: 2px ;
-    color: #1692EC;
+    color: var(--text-highlight-color);
     font-size: 24px;
 }

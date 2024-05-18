@@ -1,5 +1,5 @@
 import "../style/style.css"
-import { AdminCard } from "../constants/admin.constants";
+import { AdminCard } from "../../constants/admin.constants";
 import React from "react";
 
 const NumberCard = (cardInfo: AdminCard ) => {

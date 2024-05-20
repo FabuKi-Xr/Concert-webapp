@@ -1,53 +1,56 @@
+import * as constants from "@/constants";
+import { cookies } from "next/headers";
 import Link from "next/link";
+import { redirect } from "next/navigation";
+import Image from "next/image";
 
-export default function Home() {
+export default async function Home() {
+
   return (
-    <div>
-      <h1>Home</h1>
-      {/* <Link href="/admin">Admin</Link>
-      <Link href="/user">User</Link> */}
-    </div>
-    // <main>
-    //     <div className="bg-blue-200 w-full px-16 md:px-0 h-screen flex items-center justify-center">
-    //       <div className="grid justify-items-center ">
-    //         <div className="flex flex-rows mb-[5rem] text-4xl font-bold text-blue-900 ">
-    //           <svg
-    //             xmlns="http://www.w3.org/2000/svg"
-    //             fill="none"
-    //             viewBox="0 0 24 24"
-    //             strokeWidth="1.5"
-    //             stroke="currentColor"
-    //             className="w-10 h-10 mr-3"
-    //           >
-    //             <path
-    //               strokeLinecap="round"
-    //               strokeLinejoin="round"
-    //               d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75"
-    //             />
-    //           </svg>
-    //           <p>Where do you go ?</p>
-    //         </div>
-            
-    //         <div className="flex flex-col md:flex-row items-center ">
-    //         <Link
-    //         href="/admin"
-    //             className="px-8 py-10 bg-white  rounded-md drop-shadow-md text-3xl font-bold 
-    //           duration-100 hover:scale-105 hover:bg-blue-50"
-    //           >
-    //             Admin
-    //           </Link>
-    //           <Link
-    //         href="/user"
-    //             className="mt-10 md:mt-0 ml-0 md:ml-12 px-8 py-10 bg-white  rounded-md drop-shadow-md text-3xl font-bold 
-    //           duration-100 hover:scale-105 hover:bg-blue-50"
-    //           >
-    //             User
-              
-    //           </Link>
-    //         </div>
-    //         </div>
+    <main>
+      <div className="w-full h-[10vh]
+      mobile:px-0 mobile:py-1 
+      md:px-5 md:py-2 
+      lg:px-2 lg:py-10
+      shadow-lg shadow-slate-800
+      bg-slate-900 text-white flex items-center justify-end
+      " 
+      >
+          <Link className="
+            w-full h-[10vh]
+            mobile:w-[70px]  mobile:text-md  mobile:px-0
+            sm:w-[100px] sm:px-2 sm:py-1 sm:text-lg
+            md:w-[100px] md:px-2 md:py-2 md:text-2xl
+            lg:w-[150px] lg:px-2 lg:py-4
+            hover:bg-violet-500
+            font-bold flex items-center justify-center
+            text-center 
+            "
+              href="/login"
+            >
+              Login
+          </Link>
+        
+      </div>
+      <div className="w-full  max-h-max h-[90vh]
+      bg-cover bg-center bg-no-repeat 
+      text-white 
+      " 
+      >
+        <Image className="absolute -z-10 " src="/concert.jpg" alt="concert image" fill/>
+        <h1 className="
+        mobile:text-lg md:text-4xl lg:text-6xl font-extrabold 
+        mobile:pl-6 sm:pl-16 md:pl-24 lg:pl-32 pt-20 ">
+          <span className="backdrop-blur-sm ">THE 
+            <span className="text-pink-600">     CONCERTO</span>
+            </span><br/>
+          <span className="backdrop-blur-sm ">CONNECT YOUR 
+          <span className="backdrop-blur-sm text-pink-600"> "FAV" </span> 
+          ARTIST.</span>
           
-    //     </div>
-    // </main>
+        </h1>
+      </div>
+        
+    </main>
   );
 }

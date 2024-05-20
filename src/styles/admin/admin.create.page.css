@@ -1,0 +1,17 @@
+.admin-create-page {
+    border-radius: 8px;
+    border-color: #C2C2C2;
+    /* background-color: red; */
+    border-width: 1px;
+}
+
+.title {
+    color :  var(--text-highlight-color);
+}
+.button-save {
+    background-color: var(--text-highlight-color);
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    gap: 10px;
+}

@@ -8,7 +8,6 @@ export const metadata: Metadata = {
   title: "Concert App",
   description: "Data Wow Assignment",
   icons: "/music.ico"
-  
 };
 
 export default function RootLayout({

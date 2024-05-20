@@ -52,7 +52,7 @@ const ConcertCard = ({...props}: ConcertCardProps) => {
         <div className="admin-concert admin-concert-card card px-10 pt-10 mb-12">
             <p className="admin-concert title mobile:text-xl sm:text-2xl md:text-4xl ">{props.name}</p>
             <hr className="h-px my-6 bg-gray-200 border-0 dark:bg-gray-300"></hr>
-            <p className="admin-concert detail mobile:text-sm md:text-base">{props.description}</p>
+            <p className="admin-concert detail mobile:text-sm md:text-base lg:text-xl">{props.description}</p>
             <div className="flex mobile:flex-col sm:flex-row md:justify-between mt-8 mb-10 
                 mobile:space-y-2 sm:space-y-0 mobile:items-start sm:items-center">
                 <div className="flex items-center mobile:gap-0 md:gap-1">

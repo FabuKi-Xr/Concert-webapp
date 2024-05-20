@@ -45,7 +45,7 @@ export default async function Home() {
             <span className="text-pink-600">     CONCERTO</span>
             </span><br/>
           <span className="backdrop-blur-sm ">CONNECT YOUR 
-          <span className="backdrop-blur-sm text-pink-600"> "FAV" </span> 
+          <span className="backdrop-blur-sm text-pink-600"> &ldquo;FAV&rdquo; </span> 
           ARTIST.</span>
           
         </h1>

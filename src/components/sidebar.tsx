@@ -12,10 +12,12 @@ const Sidebar = () => {
         const width = window.innerWidth;
         setWidth(width);
     };
+
     useEffect(() => {
         window.addEventListener('resize', useWidth);
         useWidth();
       }, []);
+
 
     const navLink = [
         {

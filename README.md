@@ -7,7 +7,7 @@
         npm run dev
         ```
 
-    2) [backend](hhttps://github.com/FabuKi-Xr/concert-backend)
+    2) [backend](https://github.com/FabuKi-Xr/concert-backend)
 
         เริ่มต้นที่ install database ซึ่งเป็น dependency
         ```bash
